@@ -19,7 +19,7 @@ const Projects = () => {
                 <div className="timeline-dot"></div>
                     <div className="timeline-content">
 
-                        <img src="../../assets/taskflow.png" alt="btt image" className="image-content"></img>
+                        <img src="src/assets/taskflow.png" alt="btt image" className="image-content"></img>
 
                         <h3>TaskFlow AI</h3>
                         <p>Task Management Automation Tool with GPT-4o</p>
@@ -28,7 +28,7 @@ const Projects = () => {
             <div className="timeline-item">
                 <div className="timeline-dot"></div>
                     <div className="timeline-content">
-                        <img src="../../assets/journeyai.png" alt="btt image" className="image-content"></img>
+                        <img src="src/assets/journeyai.png" alt="btt image" className="image-content"></img>
 
                         <h3>JourneyAI</h3>
                         <p>One-click AI Trip Planner with Gemini</p>
@@ -38,7 +38,7 @@ const Projects = () => {
             <div className="timeline-item">
                 <div className="timeline-dot"></div>
                     <div className="timeline-content">
-                        <img src="../../assets/sql.png" alt="btt image" className="image-content"></img>
+                        <img src="src/assets/sql.png" alt="btt image" className="image-content"></img>
 
                         <h3>SQL Database</h3>
                         <p>Console-based SQL prototype using various complex data structures such as B+ Trees</p>
