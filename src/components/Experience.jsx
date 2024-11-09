@@ -19,7 +19,7 @@ const Experience = () => {
             <div className="timeline-item">
                 <div className="timeline-dot"></div>
                     <div className="timeline-content">
-                        <img src="src/assets/btt.jpg" alt="btt image" className="image-content"></img>
+                        <img src="../../assets/btt.jpg" alt="btt image" className="image-content"></img>
                         <h3>AI/ML Intern</h3>
                         <p>Break Through Tech, UCLA</p>
                         <span>2023 - Present</span>
@@ -28,7 +28,7 @@ const Experience = () => {
             <div className="timeline-item">
                 <div className="timeline-dot"></div>
                     <div className="timeline-content">
-                    <img src="src/assets/mepresenting.PNG" alt="btt image" className="image-content"></img>
+                    <img src="../../assets/mepresenting.PNG" alt="btt image" className="image-content"></img>
                         <h3>Visiting Undergrad Researcher</h3>
                         <p>Caltech</p>
                         <span>Summer 2023</span>
@@ -38,7 +38,7 @@ const Experience = () => {
             <div className="timeline-item">
                 <div className="timeline-dot"></div>
                     <div className="timeline-content">
-                    <img src="src/assets/tutoring.png" alt="btt image" className="image-content"></img>
+                    <img src="../../assets/tutoring.png" alt="btt image" className="image-content"></img>
                         <h3>Math, CS Teaching Assistant</h3>
                         <p>Pasadena City College</p>
                         <span>2022 - Present</span>
