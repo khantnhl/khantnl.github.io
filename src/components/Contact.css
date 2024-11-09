@@ -1,0 +1,152 @@
+/* General Container Styling */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+    position: relative;
+  }
+
+  /* Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 50px 50px 50px;
+    text-align: left;
+  }
+
+  .pretext {
+    font-size: 25px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+  }
+  
+  .form-group label {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: transparent; /* Remove solid border color */
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.8); /* Gradient-like glow */
+}
+
+    .important-group {
+        display: flex;
+        gap: 20px;
+    }
+
+    .important-group .form-group {
+        flex: 1;
+    }
+
+  /* Button Styling */
+  .contact-container .submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 5px;
+
+  }
+
+  .contact-container .submit-button:hover {
+    background-color: #cfd5db;
+  }
+  
+  .send-button {
+    background-color: white;
+    color: black;
+  }
+
+
+  /* Social Buttons Container */
+.social-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    padding: 0 0 0 50px;    
+  }
+  
+  /* Social Button Styling */
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 45px;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+
+  /* Icon Styling */
+  .social-button i {
+    font-size: 20px;
+    border-color: white;
+  }
+
+  /* resume */
+  .resume-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+  }
+  
+  /* Resume Button Styling */
+  .resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Hover Effect */
+  .resume:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1); /* Slight enlargement on hover */
+  }
+  
+  /* Icon Styling */
+  .resume i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 20px; /* Adjust icon size */
+  }

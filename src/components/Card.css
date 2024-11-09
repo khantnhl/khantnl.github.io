@@ -1,0 +1,81 @@
+.card-container {
+    width: 800px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: black; /* Black background for the card */
+    color: white; /* White text color for contrast */
+    border-radius: 3%; /* Rounded corners */
+    text-align: center; /* Center-align text */
+
+}
+
+.card-content {
+    font-size: 1.2rem; /* Slightly larger text */
+    font-weight: bold;
+}
+
+.myphoto {
+    width: 600px;
+    height: 700px; 
+    border-radius: 10%;
+    padding: 25px 25px 25px 25px; /* top right bottom left*/
+    justify-content: center;
+    object-fit: cover;
+}
+
+.photo {
+    width : 600px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+.cancel-button {
+    width: 40px;
+    height: 40px;
+    background-color: black; 
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make it circular */ 
+  
+    font-size: 15px;
+    position: absolute;
+    top: 10px; /* Distance from the top of the container */
+    right: 10px; /* Distance from the right of the container */
+    transition: background-color 0.3s, opacity 0.3s;
+    display: flex; /* Center content using flex */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cancel-button:hover {
+    background-color: gray;
+  }
+
+  .experience-section {
+    width: 60%;
+    margin: auto;
+  }
+  
+  .experience-section h2 {
+    font-size: 1.5rem;
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+  }
+  
+  .experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 5px;
+    position: relative;
+  }
+  
