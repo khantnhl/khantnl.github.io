@@ -41,13 +41,13 @@ const Contact = () => {
 
       {/* Social Media Buttons */}
       <div className="social-buttons">
-        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="social-button github">
+        <a href="https://github.com/khantnhl" target="_blank" rel="noopener noreferrer" className="social-button github">
           <i className="fab fa-github"></i> 
         </a>
-        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="social-button linkedin">
+        <a href="https://linkedin.com/in/khant-hlaing" target="_blank" rel="noopener noreferrer" className="social-button linkedin">
           <i className="fab fa-linkedin"></i> 
         </a>
-        <a href="https://youtube.com/your-channel" target="_blank" rel="noopener noreferrer" className="social-button youtube">
+        <a href="https://youtube.com/@lordnuu" target="_blank" rel="noopener noreferrer" className="social-button youtube">
           <i className="fab fa-youtube"></i> 
         </a>
       </div>
