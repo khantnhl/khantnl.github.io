@@ -11,7 +11,8 @@ const Card = () => {
     return(
         <div className="card-container">
             
-            <img  className='myphoto' src="../../assets/myphoto.JPG"></img>
+            <img  className='myphoto' src="src/assets/myphoto.JPG"></img>
+            
             <button onClick={goHome} className="cancel-button">
                 {"X"}
             </button>
