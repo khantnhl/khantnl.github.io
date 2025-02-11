@@ -5,6 +5,8 @@ import Navbar from "./NavBar"
 import {Typewriter} from "react-simple-typewriter"; // Use the correct default import
 import EXAMPLE from "../../swe_resume.pdf"
 
+const selected_colors = ["#ff0000", "#ADD8E6","#90EE90", "#F5F5DC", "#F4C2C2", "#E6E6FA", "#D3D3D3"]
+
 const ParticleComponent = () => {
   const [init, setInit] = useState(false);
   
@@ -25,7 +27,7 @@ const ParticleComponent = () => {
     () => ({
       background: {
         color: {
-          value: "transparent",
+          value: "#808080",
         },
       },
 
@@ -53,7 +55,7 @@ const ParticleComponent = () => {
       },
       particles: {
         color: {
-          value: "#ff0000",
+          value: selected_colors[Math.floor(Math.random() * selected_colors.length)],
           animation: {
             enable: true,
             speed: 40,
@@ -62,7 +64,7 @@ const ParticleComponent = () => {
         },
         links: {
           blink: false,
-          color: "random",
+          color: selected_colors[Math.floor(Math.random() * selected_colors.length)],  // Randomly select or just do "random"
           consent: false,
           distance: 60,
           enable: true,
