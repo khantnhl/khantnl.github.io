@@ -1,18 +1,18 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './Card.css';
 import './Contact.css';
 
 const Contact = () => {
-    const navigate = useNavigate();
-
-    const goHome = () => {
-        navigate('/')
+  const scrollback = () => {
+    const introSection = document.getElementById('intro');
+    if(introSection){
+        introSection.scrollback({ behavior: 'smooth' });
     }
+}
   return (
     <div className="card-container">
 
-      <button onClick={goHome} className="cancel-button">X</button>
+      <button onClick={scrollback} className="cancel-button">X</button>
       
       <form className="contact-form">
         <div className='pretext'>

@@ -1,106 +1,168 @@
+import  { useEffect, useState, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useState, useEffect, useMemo } from "react";
 import { loadSlim } from "@tsparticles/slim";
+import Navbar from "./NavBar"
+import {Typewriter} from "react-simple-typewriter"; // Use the correct default import
+import EXAMPLE from "../../swe_resume.pdf"
 
-const ParticlesComponent = (props) => {
+const ParticleComponent = () => {
+  const [init, setInit] = useState(false);
+  
+  
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
 
-  const [init, setInit] = useState(false); // Initialize state for `init`
+  const particlesLoaded = (container) => {
+    
+  };
 
+  const options = useMemo(
+    () => ({
+      background: {
+        color: {
+          value: "transparent",
+        },
+      },
 
-    useEffect(() => {
-        initParticlesEngine(async (engine) => {
-            await loadSlim(engine);
-        }).then(() => {
-          setInit(true);
-        });
-    }, []);
-
-    const particlesLoaded = (container) => {
-        console.log(container);
-    };
-
-    const options = useMemo(
-        () => ({
-          particles: {
-            number: {
-              value: 245,
-              density: {
-                enable: true,
-                value_area: 500,
-              },
-            },
-            color: {
-              value: "#ffffff",
-            },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 1,
-                color: "#000000",
-              },
-            },
-            opacity: {
-              value: 0.426,
-              random: false,
-            },
-            size: {
-              value: 5,
-              random: true,
-              anim: {
-                enable: true,
-                speed: 5,
-                size_min: 0.1,
-                sync: true,
-              },
-            },
-            links: {
-              enable: true,
-              distance: 100,
-              color: "#ffffff",
-              opacity: 0.99,
-              width: 1,
-            },
-            move: {
-              enable: true,
-              speed: 3,
-              direction: "none",
-              random: false,
-              straight: false,
-              out_mode: "out",
-              bounce: false,
-            },
+      fpsLimit: 60,
+      interactivity: {
+        events: {
+          onHover: {
+            enable: true,
+            mode: "bubble",
           },
-          interactivity: {
-            detect_on: "canvas",
-            events: { 
-              onhover: {
-                enable: true,
-                mode: "grab", // Set to grab mode on hover
-              },
-              onclick: {
-                enable: true,
-                mode: "push", // Set to push mode on click
-              },
-              resize: true,
-            },
-            modes: {
-              grab: {
-                distance: 150, // Adjusted for better grab interaction
-                line_linked: {
-                  opacity: 0.7,
-                },
-              },
-              push: {
-                quantity: 4, // Number of particles to add on click
-              },
-            },
+          onClick: {
+            enable: true,
+            mode: "repulse",
           },
-          retina_detect: true,
-        }),
-        []
-      );
+        },
+        modes: {
+          bubble: {
+            distance: 200,
+            duration: 2,
+            opacity: 8,
+            size: 18,
+            speed: 50,
+          },
+        },
+      },
+      particles: {
+        color: {
+          value: "#ff0000",
+          animation: {
+            enable: true,
+            speed: 40,
+            sync: true,
+          },
+        },
+        links: {
+          blink: false,
+          color: "random",
+          consent: false,
+          distance: 60,
+          enable: true,
+          opacity: 1,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          outModes: "bounce",
+          speed: { min: 2, max: 2 },
+        },
+        number: {
+          value: 300,
+        },
+        opacity: {
+          animation: {
+            enable: true,
+            speed: 2,
+            sync: false,
+          },
+          random: false,
+          value: { min: 0.05, max: 1 },
+        },
+        shape: {
+          type: "circle",
+        },
+        size: {
+          value: { min: 5, max: 7 }
+        }
+      },
 
-    return init ? <Particles id={props.id} init={particlesLoaded} options={options}/> : null; 
+      detectRetina: true,
+    }),
+    []
+  );
+
+  if (init) {
+    return (
+      <div id="particles-js">
+      
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
+
+        <div className="header">
+          <div className="nav-links">
+            <a className="link" href="#about" data-scroll>
+              About Me
+            </a>
+            <a className="link" href="#projects" data-scroll>
+              Projects
+            </a>
+            <a className="link" href="#experience" data-scroll>
+              Experience
+            </a>
+          </div>
+           <h1>
+              <Typewriter
+                words={["Hi, my name is Khant."]}
+                typeSpeed={100}
+                delaySpeed={1000}
+              />
+            </h1>
+            <p>
+              <Typewriter
+                words={["I am passionate about Software Development, Deep Learning and Cyber Security."]}
+                typeSpeed={50}
+                deleteSpeed={10}
+                delaySpeed={1000}
+                loop={false}
+              />
+            </p>
+
+          <div className="icon-container">
+            <a href={EXAMPLE} target="_blank">
+              Resume <i className="icon fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+            </a>
+            <a id="circle-icon" href="https://github.com/khantnhl" target="blank">
+              <i className="fa-brands fa-github"></i>
+            </a>
+            <a id="circle-icon" href="https://github.com/khantnhl" target="blank">
+            <i className="fa-brands fa-linkedin" href="https://www.linkedin.com/in/khant-hlaing/" target="blank"></i>
+            </a>
+            <a id="circle-icon" href="mailto:khantnyihlaingkh@gmail.com?subject=Reaching Out">
+              <i className="fa fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <a className="down" href="#about" data-scroll>
+          <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+
+      </div>
+    );
+  }
+
+  //else
+  return <></>;
 };
-
-export default ParticlesComponent;
+export default ParticleComponent;

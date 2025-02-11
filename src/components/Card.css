@@ -2,21 +2,25 @@
     width: 800px; /* Adjust width as needed */
     padding: 20px;
     background-color: black; /* Black background for the card */
-    color: white; /* White text color for contrast */
-    border-radius: 3%; /* Rounded corners */
-    text-align: center; /* Center-align text */
-
+    color: white; 
+    border-radius: 15px; 
+    text-align: center; 
+    margin: 20px auto;
+    position: relative;
+    overflow : hidden; /* for child elements to respect the properties */
 }
 
 .card-content {
+    position: relative;
     font-size: 1.2rem; /* Slightly larger text */
     font-weight: bold;
+    /* padding-left: 20px; */
 }
 
 .myphoto {
     width: 600px;
     height: 700px; 
-    border-radius: 10%;
+    border-radius: 2%;
     padding: 25px 25px 25px 25px; /* top right bottom left*/
     justify-content: center;
     object-fit: cover;
@@ -25,7 +29,7 @@
 .photo {
     width : 600px;
     height: 400px;
-    border-radius: 10%;
+    border-radius: 2%;
 }
 
 .cancel-button {
@@ -34,7 +38,7 @@
     background-color: black; 
     color: white;
     border: none;
-    border-radius: 50%; /* Make it circular */ 
+    border-radius: 2%; /* Make it circular */ 
   
     font-size: 15px;
     position: absolute;
