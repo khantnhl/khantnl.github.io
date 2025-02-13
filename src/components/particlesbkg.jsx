@@ -55,7 +55,7 @@ const ParticleComponent = () => {
       },
       particles: {
         color: {
-          value: selected_colors[Math.floor(Math.random() * selected_colors.length)],
+          value: "#ff0000",
           animation: {
             enable: true,
             speed: 40,
@@ -64,7 +64,7 @@ const ParticleComponent = () => {
         },
         links: {
           blink: false,
-          color: selected_colors[Math.floor(Math.random() * selected_colors.length)],  // Randomly select or just do "random"
+          color: "random",  // Randomly select or just do "random"
           consent: false,
           distance: 60,
           enable: true,
@@ -77,7 +77,7 @@ const ParticleComponent = () => {
           speed: { min: 2, max: 2 },
         },
         number: {
-          value: 300,
+          value: 150,
         },
         opacity: {
           animation: {
