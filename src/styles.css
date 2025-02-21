@@ -16,13 +16,19 @@ html, body {
   color: #fff;
   position: absolute;
   font-family: 'Montserrat', sans-serif;
+  padding: 20px 40px; 
+  background: rgba(0, 0, 0, 0.767);
+  border-radius: 10px;
+  min-width: 300px;
+  min-height: 80px; 
+  white-space: nowrap;
   font-size: 20px;
-  width: auto;
+  width: 800px;
   top: 50%;
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 #particles-js {
@@ -46,7 +52,6 @@ html, body {
 
 .nav-links {
   margin: 10px;
-  
 }
 
 .nav-links .link {
@@ -54,11 +59,11 @@ html, body {
   text-decoration: none;
   font-size: 20px;
   margin: 10px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .link:hover {
-  color: black;
+  color: rgba(224, 224, 224, 0.546);
 }
 
 .down {

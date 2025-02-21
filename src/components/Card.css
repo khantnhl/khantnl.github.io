@@ -10,20 +10,28 @@
     overflow : hidden; /* for child elements to respect the properties */
 }
 
+.card-container h1 {
+  margin-top: 0;
+}
+
 .card-content {
     position: relative;
     font-size: 1.2rem; /* Slightly larger text */
-    font-weight: bold;
-    /* padding-left: 20px; */
+    font-weight: none;
 }
 
 .myphoto {
-    width: 600px;
-    height: 700px; 
+    width: 450px;
+    height: 500px; 
     border-radius: 2%;
-    padding: 25px 25px 25px 25px; /* top right bottom left*/
+    padding: 2px 25px 5px 25px; /* top right bottom left*/
     justify-content: center;
     object-fit: cover;
+}
+
+.card-content p {
+  padding: 0px 0px 0px 40px;
+  margin-top: 0;
 }
 
 .photo {
