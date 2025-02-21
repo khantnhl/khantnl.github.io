@@ -1,12 +1,12 @@
 /* Timeline Styling */
 .timeline {
     align-items: center;
+    
     display: flex;
     flex-direction: column;
 }
   
 .timeline-item {
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -21,7 +21,6 @@
   }
 
 .timeline-content {
-    padding-left: 20px;
     position: relative;
     font-size: 18px;
 }
@@ -29,10 +28,17 @@
 .timeline-content span, h3 {
     display: inline-block;
     padding-left: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .timeline-content span a {
     color: white;
+}
+
+.timeline-content p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .image-content {

@@ -11,10 +11,10 @@ const Home = () => {
 
             <img  className='myphoto' src="../../assets/myphoto.JPG"></img>
                 <p> 
-                I’m a junior transferring from community college to one of the UCs—hopefully to Berkeley. 
-                I’ve had the opportunity to intern at Caltech and through the BreakThroughTechAI program at UCLA, where I collaborated with teams on exciting machine learning and full-stack projects. 
-                Feel free to reach out—whether to chat or connect about software engineering opportunities. 
-                You can email me above!
+                I’m a junior transferring from community college to University of California in Fall 2025.
+                I’ve previously interned at Caltech, BreakThroughTechAI and CariCon.org, where I collaborated with teams on machine learning and <br/>full-stack projects. 
+                <br/>Feel free to reach out—whether to chat or connect about software engineering opportunities. 
+                Let's connect!
                 </p>
             </div>
       </div>

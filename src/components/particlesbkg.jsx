@@ -55,7 +55,7 @@ const ParticleComponent = () => {
       },
       particles: {
         color: {
-          value: "#ff0000",
+          value: "#f5efee",
           animation: {
             enable: true,
             speed: 40,
@@ -64,7 +64,7 @@ const ParticleComponent = () => {
         },
         links: {
           blink: false,
-          color: "random",  // Randomly select or just do "random"
+          color: "#f5efee",  
           consent: false,
           distance: 60,
           enable: true,
@@ -132,7 +132,7 @@ const ParticleComponent = () => {
             </h1>
             <p>
               <Typewriter
-                words={["I am passionate about Software Development, Deep Learning and Cyber Security."]}
+                words={["I am passionate about Software Development and Machine Learning."]}
                 typeSpeed={50}
                 deleteSpeed={10}
                 delaySpeed={1000}
